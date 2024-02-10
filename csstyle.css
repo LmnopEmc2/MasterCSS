@@ -1,0 +1,77 @@
+:root {
+    --color1: yellow;
+    --color2: pink;
+    --color3: red;
+    --color4: brown;
+}
+* {
+    box-sizing: border-box;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+}
+#container {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(12, 8.3%);
+    grid-template-rows: repeat(12, 8.3%);
+    margin: auto;
+}
+#screen {
+    border: solid;
+    grid-column: 5/-1;
+    grid-row: 1 / 10;
+    display: inline-block;
+    background-color: rgba(186, 172, 114, 0.704);
+}
+#myform {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+}
+#screen .simple {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#side-pannel {
+    background-color: bisque;
+    border: solid red;
+    grid-area: 1/1/10/5;
+}
+#bottom-pannel {
+    border: solid blue;
+    grid-area: 10/1/-1/-1;
+    background-color: rgb(157, 131, 97);
+}
+.screen-page, .button-page {
+    width: 100%;
+    height: 100%;
+}
+.showing {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(163, 170, 139, 0.876);
+}
+.buttons-container {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns:max-content;
+}
+.group1 {
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid;
+}
+input[type="number"] {
+    width: 50px;
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>CSS learn</title>
+        <link rel="stylesheet" href="csstyle.css">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div id="container">
+            <div id="screen">
+                <div id="simple" class="simple screen-page">
+                    <div id="box">
+                        <div id="content" style="background-color: white;width:100%;height: 100%; display: none;"></div>
+                    </div>
+                </div>
+            </div>
+            <div id="side-pannel">
+                <form id="myform2">
+                    <label for="color-mode-options">background color:</label>
+                <select id="color-mode-options">
+                    <option value="keyword">keyword</option>
+                    <option value="rgb">rgb</option>
+                    <option value="hsl">hxl</option>
+                    <option value="hex">hex</option>
+                </select>
+                <div id="keyword" style="display: none;">
+                    <select id="keyword-colors">
+                        <option value="red">red</option>
+                        <option value="green">green</option>
+                        <option value="blue">blue</option>
+                        <option value="yellow">yellow</option>
+                    </select>
+                </div>
+                <div id="rgb" style="display: none;">
+                    <label for="red">red: <input type="number" max="255" min="0" id="red" value="100"></label>
+                    <label for="green">green: <input type="number" max="255" min="0" id="green" value="100"></label>
+                    <label for="blue">blue: <input type="number" max="255" min="0" id="blue" value="100"></label>
+                </div>
+                <label for="box-content">box content: <input type="checkbox" value="true" id="box-content"></label>
+                </form>
+            </div>
+            <div id="bottom-pannel">
+                <div id="simple-b" class="simple button-page showing">
+                    <div class="buttons-container">
+                        <div class="group1">
+                            <form id="myform">
+                        <label>width:
+                            <input type="number" min="0" max="1000" value="50" id="width"><span><select id="w-unit">
+                                <option value="px">px</option>
+                                <option value="em">em</option>
+                                <option value="rem">rem</option>
+                                <option value="%">%</option>
+                            </select></span>
+                        </label>
+                        <label>height:
+                            <input type="number" min="0" max="1000" value="50" id="height"><span><select id="h-unit">
+                                <option value="px">px</option>
+                                <option value="em">em</option>
+                                <option value="rem">rem</option>
+                                <option value="%">%</option>
+                            </select></span>
+                        </label>
+                        <label>borwidth:
+                            <input type="number" id="bor-width" value="2" min="0" max="100"><span><select id="bw-unit">
+                                <option value="px">px</option>
+                                <option value="em">em</option>
+                                <option value="rem">rem</option>
+                                <option value="%">%</option>
+                            </select></span>
+                        </label>
+                        <label for="padding">padding:
+                            <input type="number" id="padding" value="5"><span><select id="p-unit">
+                                <option value="px">px</option>
+                                <option value="em">em</option>
+                                <option value="rem">rem</option>
+                                <option value="%">%</option>
+                            </select></span>
+                        </label>
+                            <label for="box-sizing" style="display: block;">box-sizing:
+                            <select id="box-sizing" style="display: block;">
+                                <option value="border-box">border-box</option>
+                                <option value="padding-box">padding-box</option>
+                                <option value="content-box">content-box</option>
+                            </select>
+                            </label>
+                        </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="csscript.js"></script>
+    </body>
+</html>

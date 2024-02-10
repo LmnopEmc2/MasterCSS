@@ -43,6 +43,7 @@ body {
     background-color: bisque;
     border: solid red;
     grid-area: 1/1/10/5;
+    overflow: auto;
 }
 #bottom-pannel {
     border: solid blue;

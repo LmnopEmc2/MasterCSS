@@ -17,14 +17,14 @@
             </div>
             <div id="side-pannel">
                 <form id="myform2">
-                    <label for="color-mode-options">background color:</label>
+                    <label for="color-mode-options">background color:</label><br>
                 <select id="color-mode-options">
                     <option value="keyword">keyword</option>
                     <option value="rgb">rgb</option>
                     <option value="hsl">hxl</option>
                     <option value="hex">hex</option>
-                </select>
-                <div id="keyword" style="display: none;">
+                </select><br>
+                <div id="keyword" style="display: none;" class="color-m">
                     <select id="keyword-colors">
                         <option value="red">red</option>
                         <option value="green">green</option>
@@ -32,12 +32,101 @@
                         <option value="yellow">yellow</option>
                     </select>
                 </div>
-                <div id="rgb" style="display: none;">
-                    <label for="red">red: <input type="number" max="255" min="0" id="red" value="100"></label>
-                    <label for="green">green: <input type="number" max="255" min="0" id="green" value="100"></label>
-                    <label for="blue">blue: <input type="number" max="255" min="0" id="blue" value="100"></label>
+                <div id="rgb" style="display: none;" class="color-m">
+                    <label for="red">red: <input type="number" max="255" min="0" id="red" value="100"></label><br>
+                    <label for="green">green: <input type="number" max="255" min="0" id="green" value="100"></label><br>
+                    <label for="blue">blue: <input type="number" max="255" min="0" id="blue" value="100"></label><br>
                 </div>
-                <label for="box-content">box content: <input type="checkbox" value="true" id="box-content"></label>
+                <label for="use-background">Use-background
+                    <input id="use-background" type="checkbox"><br>
+                </label>
+                <label for="background">background:
+                    <select id="background">
+                        <option value="url">URL</option>
+                        <option value="linear-gradient">L-G</option>
+                    </select><br>
+                    <div id="url" style="display: none;" class="background-m">
+                        <label for="bg-url">BG URL: 
+                            <input type="url" style="width: 100%;" id="bg-url">
+                        </label>
+                    </div>
+                    <div id="linear-gradient" style="display: none;" class="background-m">
+                        <span>linear-gradient:</span><br>
+                        <label for="lg-angle">Angle:
+                            <input type="number" min="0" max="360" id="lg-angle" value="90"><span>deg</span>
+                        </label><br>
+                        <label for="color-count">Color count:
+                            <input type="number" min="2" max="5" id="color-count" value="2">
+                        </label><br>
+                        <div id="lg-c1" class="lg-cs" style="display: none;">
+                            <label for="lg-clr-mode1"><span>LG c1 mode:</span></label><br>
+                            <select id="lg-clr-mode1">
+                                <option value="lg-keyword">keyword</option>
+                                <option value="lg-rgb">rgb</option>
+                            </select><br>
+                            <div id="lg-keyword1" style="display: none;" class="lg-color">
+                                <span>color1 kw;</span><br>
+                                <select id="lg-kw-clr1">
+                                    <option value="red">red</option>
+                                    <option value="green">green</option>
+                                    <option value="blue">blue</option>
+                                </select>
+                            </div>
+                            <div id="lg-rgb1" style="display: none;" class="lg-color">rgb1</div>
+                        </div>
+                        <div id="lg-c2" class="lg-cs" style="display: none;">
+                            <label for="lg-clr-mode2"><span>LG c2 mode:</span></label><br>
+                            <select id="lg-clr-mode2">
+                                <option value="lg-keyword">keyword</option>
+                                <option value="lg-rgb">rgb</option>
+                            </select><br>
+                            <div id="lg-keyword2" style="display: none;" class="lg-color">
+                                <span>color2 kw;</span><br>
+                                <select id="lg-kw-clr2">
+                                    <option value="red">red</option>
+                                    <option value="green">green</option>
+                                    <option value="blue">blue</option>
+                                </select>
+                            </div>
+                            <div id="lg-rgb2" style="display: none;" class="lg-color">rgb2</div>
+                        </div>
+                        <div id="lg-c3" class="lg-cs" style="display: none;">
+                            <label for="lg-clr-mode3"><span>LG c3 mode:</span></label><br>
+                            <select id="lg-clr-mode3">
+                                <option value="lg-keyword">keyword</option>
+                                <option value="lg-rgb">rgb</option>
+                            </select><br>
+                            <div id="lg-keyword3" style="display: none;" class="lg-color">
+                                <span>color3 kw;</span><br>
+                                <select id="lg-kw-clr3">
+                                    <option value="red">red</option>
+                                    <option value="green">green</option>
+                                    <option value="blue">blue</option>
+                                </select>
+                            </div>
+                            <div id="lg-rgb3" style="display: none;" class="lg-color">rgb3</div>
+                        </div>
+                        <div id="lg-c4" class="lg-cs" style="display: none;">
+                            <label for="lg-clr-mode4"><span>LG c4 mode:</span></label><br>
+                            <select id="lg-clr-mode4">
+                                <option value="lg-keyword"></option>
+                                <option value="lg-rgb"></option>
+                            </select><br>
+                            <div id="lg-keyword4"></div>
+                            <div id="lg-rgb4"></div>
+                        </div>
+                        <div id="lg-c5" class="lg-cs" style="display: none;">
+                            <label for="lg-clr-mode5"><span>LG c5 mode:</span></label><br>
+                            <select id="lg-clr-mode5">
+                                <option value="lg-keyword"></option>
+                                <option value="lg-rgb"></option>
+                            </select><br>
+                            <div id="lg-keyword5"></div>
+                            <div id="lg-rgb5"></div>
+                        </div>
+                    </div>
+                </label>
+                <label for="box-content">content box: <input type="checkbox" value="true" id="box-content"></label>
                 </form>
             </div>
             <div id="bottom-pannel">

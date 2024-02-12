@@ -77,7 +77,7 @@ const applyBackground = (backMode) => {
 }
 const url = () => {
     if (!bgUrl.value == ""){
-        box.style.background = bgUrl.value;
+        box.style.background = 'yellow'//bgUrl.value;
     }
 }
 const linearGradient = (clrs) => {

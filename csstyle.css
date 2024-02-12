@@ -76,3 +76,11 @@ body {
 input[type="number"] {
     width: 50px;
 }
+::-webkit-scrollbar {
+    width: 5px;
+    background-color: rgb(155, 207, 219);
+  }
+  ::-webkit-scrollbar-thumb {
+    width: 10px;
+    background-color: black;
+  }
